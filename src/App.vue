@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>La mia prima app con Vue CLI!</h1>
+    <img src="./assets/img_deadpool.jpg" alt="img deadpool">
+    <VueCLIFirst />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueCLIFirst from './components/VueCLIFirst.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VueCLIFirst
   }
 }
 </script>

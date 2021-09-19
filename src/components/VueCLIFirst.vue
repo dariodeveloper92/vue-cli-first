@@ -1,30 +1,32 @@
 <template>
-  <div id="app">
-      <h1>La mia prima app con Vue CLI!</h1>
-    <img alt="deadpool img" src="./assets/img_deadpool.jpg">
-    <VueCliFirst msg="Welcome to Your Vue.js App"/>
+  <div>
+
   </div>
 </template>
 
 <script>
-import VueCliFirst from './components/VueCliFirst.vue'
-
-
 export default {
-  name: 'App',
-  components: {
-    VueCliFirst
+  name: 'VueCLIFirst',
+  props: {
+    msg: String
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
 }
 </style>
